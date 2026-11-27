@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6971648185857271486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4719148852837776999}
+  - component: {fileID: 404338212748351597}
+  - component: {fileID: 9002308876814486662}
+  - component: {fileID: 5646987422478577842}
+  m_Layer: 0
+  m_Name: HUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4719148852837776999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6971648185857271486}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &404338212748351597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6971648185857271486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad1ccab63e73aa45ad1b7094b8b4169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  panel: {fileID: 0}
+  firstButton: {fileID: 0}
+  loader: {fileID: 0}
+--- !u!114 &9002308876814486662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6971648185857271486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f373bf62d530fcd4ab043a2e0fae8292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndScreens
+  winPanel: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  winFirst: {fileID: 0}
+  overFirst: {fileID: 0}
+  winText: {fileID: 0}
+  winClip: {fileID: 8300000, guid: 969e728e5c39f4240a00006493751c44, type: 3}
+  loseClip: {fileID: 8300000, guid: 89cc5de18d0da4b428da9d9ce5e95dca, type: 3}
+  loader: {fileID: 0}
+--- !u!114 &5646987422478577842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6971648185857271486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529976648914b0e4ab0f56fd2c44a7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hud
+  scoreText: {fileID: 0}
+  livesText: {fileID: 0}

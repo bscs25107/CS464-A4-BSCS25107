@@ -577,6 +577,7 @@ GameObject:
   - component: {fileID: 800811340}
   - component: {fileID: 800811339}
   - component: {fileID: 800811338}
+  - component: {fileID: 800811341}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -647,13 +648,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 3380591194552258618}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -697,6 +698,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800811336}
   m_CullTransparentMesh: 1
+--- !u!114 &800811341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800811336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ecc2cb0b4026d047ae6c0ae0ac7cb61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+  clip: {fileID: 8300000, guid: 2585039a293ad8241ad32651e628d1a2, type: 3}
 --- !u!1 &880051421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,6 +1981,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc7294a96ed13e6438da7e21099a6d71, type: 3}
+--- !u!114 &3380591194552258618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3236282461719871094, guid: bc7294a96ed13e6438da7e21099a6d71, type: 3}
+  m_PrefabInstance: {fileID: 3380591194552258617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c17d13163c2fbc4d82cf714aefc07e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
