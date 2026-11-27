@@ -10,7 +10,7 @@ public class LevelObjective : MonoBehaviour
 
     void Awake()
     {
-        Pickup.Score = 0;   // static hai, load ke baad bhi bacha rehta hai
+        Pickup.Score = 0;   
         Total = FindObjectsByType<Pickup>(FindObjectsSortMode.None).Length;
     }
 

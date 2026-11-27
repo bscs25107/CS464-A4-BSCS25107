@@ -5,21 +5,23 @@ public class HealthBar : MonoBehaviour
 {
     [SerializeField] Image fill;
     [SerializeField] Image lag;
-    float target = 1f;
+    [SerializeField] float lagDelay = 0.4f;
+    [SerializeField] float lagSpeed = 0.8f;
     float timer;
 
     public void Set(int current, int max)
     {
-        float t = (float)current / max;
-        if (t > target) lag.fillAmount = t;   // heal par lag bar sath chale
-        target = t;
+        float t = max > 0 ? (float)current / max : 0f;
         fill.fillAmount = t;
-        timer = 0.4f;
+        if (t > lag.fillAmount) lag.fillAmount = t;
+        timer = lagDelay;
     }
 
     void Update()
     {
-        if (timer > 0f) { timer -= Time.unscaledDeltaTime; return; }
-        lag.fillAmount = Mathf.MoveTowards(lag.fillAmount, target, 0.8f * Time.unscaledDeltaTime);
+        if (lag.fillAmount <= fill.fillAmount) return;
+        timer -= Time.unscaledDeltaTime;
+        if (timer > 0f) return;
+        lag.fillAmount = Mathf.MoveTowards(lag.fillAmount, fill.fillAmount, lagSpeed * Time.unscaledDeltaTime);
     }
 }
