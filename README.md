@@ -79,15 +79,15 @@
 | Part | Setting | Value | Why |
 |:---|:---|:---|:---|
 | A | Base hue | Triadiac · blue 240 degrees | blue base, red accent at 0°, offwhite and black accent at 120°  |
-| A | Dark · mid · light | [#00008B] · [#B22222] · [#EEEDD6] | [dark for panels, mid for buttons, light for text] |
+| A | Dark · mid · light | [#00008B] · [#B22222] · [#EEEDD6] | dark for panels, mid for buttons, light for text |
 | A | Accents | [#FFFFFF] · [#000000] | far enough apart in value to read in grayscale |
 | A | HUD text on its panel |12.91 : 1 | Cream on dark blue  is well above the 4.5 : 1 target because the text sits on a solid panel, not on the level.  |
 | A | Button label on the button | 5.63 : 1 | Cream label on the red button, measured, above the 3 : 1 target for large text. |
 | B | Music · SFX groups, as mixed | [-10] · [0] | Music sits below the effects so pickups, hits and clicks stay clear over the track.|
 | B | Slider at 1 · 0.5 · 0.0001 | 0 dB · −6 dB · −80 dB | The slider value goes through Log10(value) × 20, because volume in decibels is logarithmic|
-| C | [Guards], in [4] | Logarithmic · Min [2] · Max [20] | [reason for the rolloff and distances] |
-| C | [Goal], in [4] | Linear · Min [3] · Max [30] | [reason for the rolloff and distances] |
-| C | AudioListener | on the camera  | reason: e.g. camera is close behind the player |
+| C | [Guards], in [4] | Logarithmic · Min [2] · Max [20] |  Warning player of gaurds|
+| C | [Goal], in [4] | Linear · Min [3] · Max [30] | Helping player locate goal|
+| C | AudioListener | on the camera  |camera is close behind the player |
 | D | unlocked | int · default 1 | Level 1 is always open |
 | D | best1 … best5 | float · HasKey first | no key means no time yet |
 | D | MusicVolume | float · default 1 | full volume on run until changed by slider |
