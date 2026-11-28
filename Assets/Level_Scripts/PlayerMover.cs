@@ -16,7 +16,7 @@ public class PlayerMover : MonoBehaviour
 
     void Update()
     {
-        //if (PauseMenu.IsPaused) return;   // PauseMenu Part A mein banta hai
+        if (PauseMenu.IsPaused) return;   
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
         Vector3 v = new Vector3(x, 0, z).normalized * speed;

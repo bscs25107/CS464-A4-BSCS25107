@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 9060602302647672002}
   - component: {fileID: 4273483837078398552}
   - component: {fileID: 9083181788783571513}
+  - component: {fileID: 3351448543790132995}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Untagged
@@ -240,3 +241,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3351448543790132995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6258730164904468647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceca1ce3e96cd004db82e7464dccb927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Pickup
+  points: 10
+  burstPrefab: {fileID: 7786179151192113109, guid: 018b7dfeb90115a4a8080513e43cef8a, type: 3}
+  clip: {fileID: 8300000, guid: 12bf5d17183b98f4aadd5a4b34346495, type: 3}

@@ -17,8 +17,8 @@ public class Pickup : MonoBehaviour
         Score += points;
         Collected?.Invoke(this);
 
-        SFXplayer.Instance.Play(clip);
-        Instantiate(burstPrefab, transform.position, Quaternion.identity);
+        if (SFXplayer.Instance != null) SFXplayer.Instance.Play(clip);
+        if (burstPrefab != null) Instantiate(burstPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

@@ -1,36 +1,50 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool IsPaused;
-    public static bool Blocked;      // end screens isse true karte hain
+    public static bool Blocked;
 
     [SerializeField] GameObject panel;
     [SerializeField] GameObject firstButton;
     [SerializeField] LevelLoader loader;
 
+    [SerializeField] Button pauseButton;
+    [SerializeField] Button resumeButton;
+    [SerializeField] Button restartButton;
+    [SerializeField] Button quitButton;
+
     void Awake()
     {
         IsPaused = false;
         Blocked = false;
-        panel.SetActive(false);
+        if (panel != null) panel.SetActive(false);
+    }
+
+    void OnEnable()
+    {
+        if (pauseButton != null) pauseButton.onClick.AddListener(Pause);
+        if (resumeButton != null) resumeButton.onClick.AddListener(Resume);
+        if (restartButton != null) restartButton.onClick.AddListener(Restart);
+        if (quitButton != null) quitButton.onClick.AddListener(QuitToMenu);
+    }
+
+    void OnDisable()
+    {
+        if (pauseButton != null) pauseButton.onClick.RemoveListener(Pause);
+        if (resumeButton != null) resumeButton.onClick.RemoveListener(Resume);
+        if (restartButton != null) restartButton.onClick.RemoveListener(Restart);
+        if (quitButton != null) quitButton.onClick.RemoveListener(QuitToMenu);
     }
 
     void Update()
     {
         if (Blocked || !Input.GetKeyDown(KeyCode.Escape)) return;
         if (IsPaused) Resume(); else Pause();
-
     }
-    public static bool EndShown;
 
-    public static void SetFrozen(bool frozen)
-    {
-        Time.timeScale = frozen ? 0f : 1f;
-        AudioListener.pause = frozen;
-        IsPaused = frozen;
-    }
     public void Pause()
     {
         IsPaused = true;
@@ -45,7 +59,7 @@ public class PauseMenu : MonoBehaviour
         IsPaused = false;
         Time.timeScale = 1f;
         AudioListener.pause = false;
-        panel.SetActive(false);
+        if (panel != null) panel.SetActive(false);
     }
 
     public void Restart()

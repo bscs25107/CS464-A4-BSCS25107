@@ -9,7 +9,6 @@ public class MenuActions : MonoBehaviour
         Time.timeScale = 1f;
         AudioListener.pause = false;
         PauseMenu.IsPaused = false;
-        PauseMenu.EndShown = false;
     }
 
     public void Play() => loader.Load(1);

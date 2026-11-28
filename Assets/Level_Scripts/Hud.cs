@@ -4,15 +4,21 @@ using UnityEngine;
 public class Hud : MonoBehaviour
 {
     [SerializeField] TMP_Text scoreText, livesText;
-    int score;
 
-    void Start() => AddScore(0);
+    void Start() => ShowScore();
 
-    public void AddScore(int amount)
+    void OnEnable() => Pickup.Collected += OnPickup;
+    void OnDisable() => Pickup.Collected -= OnPickup;
+
+    void OnPickup(Pickup p) => ShowScore();
+
+    void ShowScore()
     {
-        score += amount;
-        scoreText.text = $"Score {score}";
+        if (scoreText != null) scoreText.text = $"Score {Pickup.Score}";
     }
 
-    public void SetLives(int lives) => livesText.text = $"Lives {lives}";
+    public void SetLives(int lives)
+    {
+        if (livesText != null) livesText.text = $"Lives {lives}";
+    }
 }

@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
   loadingPanel: {fileID: 0}
   bar: {fileID: 0}
+  minLoadTime: 1

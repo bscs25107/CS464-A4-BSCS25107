@@ -22,16 +22,26 @@ public class LevelLoader : MonoBehaviour
     public void Reload() => Load(SceneManager.GetActiveScene().buildIndex);
     public void LoadMenu() => Load(MenuIndex);
 
+    [SerializeField] float minLoadTime = 1f;
     IEnumerator LoadRoutine(int index)
     {
         Time.timeScale = 1f;
         if (loadingPanel != null) loadingPanel.SetActive(true);
 
         AsyncOperation op = SceneManager.LoadSceneAsync(index);
-        while (!op.isDone)
+        op.allowSceneActivation = false;
+
+        float timer = 0f;
+        while (op.progress < 0.9f || timer < minLoadTime)
         {
-            if (bar != null) bar.fillAmount = Mathf.Clamp01(op.progress / 0.9f);
+            timer += Time.unscaledDeltaTime;
+            float real = Mathf.Clamp01(op.progress / 0.9f);
+            float shown = Mathf.Clamp01(timer / minLoadTime);
+            if (bar != null) bar.fillAmount = Mathf.Min(real, shown);
             yield return null;
         }
+
+        if (bar != null) bar.fillAmount = 1f;
+        op.allowSceneActivation = true;
     }
 }

@@ -932,7 +932,7 @@ PlayerSettings:
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: CS464-A4-BSCS25107 2026-11-24_17-02-08
-  organizationId: 
+  organizationId: bscs25107
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

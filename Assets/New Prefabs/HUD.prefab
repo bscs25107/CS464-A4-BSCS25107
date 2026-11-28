@@ -66,8 +66,8 @@ MonoBehaviour:
   winFirst: {fileID: 0}
   overFirst: {fileID: 0}
   winText: {fileID: 0}
-  winClip: {fileID: 8300000, guid: 969e728e5c39f4240a00006493751c44, type: 3}
-  loseClip: {fileID: 8300000, guid: 89cc5de18d0da4b428da9d9ce5e95dca, type: 3}
+  winClip: {fileID: 8300000, guid: 60a56bbe687cc2f40a0f8d61bc9325e7, type: 3}
+  loseClip: {fileID: 8300000, guid: 26c2c705bd9946e43b3e0b2b35d058d2, type: 3}
   loader: {fileID: 0}
 --- !u!114 &5646987422478577842
 MonoBehaviour:
