@@ -3,12 +3,14 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int max = 100;
-    [SerializeField] int current;      // Inspector mein dikhega
-    public int Current => current;
-
     public event Action<int, int> Damaged;
     public event Action Died;
+
+    [SerializeField] int max = 5;
+    int current;
+
+    public int Current => current;
+    public int Max => max;
 
     void Awake() => current = max;
 
@@ -16,8 +18,12 @@ public class Health : MonoBehaviour
     {
         if (current <= 0) return;
         current = Mathf.Max(0, current - amount);
-        Debug.Log($"Health {current}/{max}");
         Damaged?.Invoke(current, max);
         if (current == 0) Died?.Invoke();
+    }
+    public void Revive()
+    {
+        current = max;
+        Damaged?.Invoke(current, max);   
     }
 }
