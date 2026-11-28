@@ -8,50 +8,71 @@
 <img src="Docs/1.jpeg" width="240">
 <img src="Docs/1bw.jpeg" width="240">
 </p>
+
 ##### Screen 2
 <p>
-<img src="Docs/1.jpeg" width="240">
-<img src="Docs/1bw.jpeg" width="240">
+<img src="Docs/2.jpeg" width="240">
+<img src="Docs/2bw.jpeg" width="240">
 </p>
+
 ##### Screen 3
 <p>
-<img src="Docs/1.jpeg" width="240">
-<img src="Docs/1bw.jpeg" width="240">
+<img src="Docs/3.jpeg" width="240">
+<img src="Docs/3bw.jpeg" width="240">
 </p>
+
 ##### Screen 4
 <p>
-<img src="Docs/1.jpeg" width="240">
-<img src="Docs/1bw.jpeg" width="240">
+<img src="Docs/4.jpeg" width="240">
+<img src="Docs/4bw.jpeg" width="240">
 </p>
+
 ##### Screen 5
 <p>
-<img src="Docs/1.jpeg" width="240">
-<img src="Docs/1bw.jpeg" width="240">
+<img src="Docs/5.jpeg" width="240">
+<img src="Docs/5bw.jpeg" width="240">
 </p>
+
 ##### Screen 6
 <p>
-<img src="Docs/1.jpeg" width="240">
-<img src="Docs/1bw.jpeg" width="240">
+<img src="Docs/6.jpeg" width="240">
+<img src="Docs/6bw.jpeg" width="240">
 </p>
+
 ##### Screen 7
 <p>
-<img src="Docs/1.jpeg" width="240">
-<img src="Docs/1bw.jpeg" width="240">
+<img src="Docs/7.jpeg" width="240">
+<img src="Docs/7bw.jpeg" width="240">
 </p>
+
 ##### Screen 8
 <p>
-<img src="Docs/1.jpeg" width="240">
-<img src="Docs/1bw.jpeg" width="240">
+<img src="Docs/8.jpeg" width="240">
+<img src="Docs/8bw.jpeg" width="240">
 </p>
+
 ##### Screen 9
 <p>
-<img src="Docs/1.jpeg" width="240">
-<img src="Docs/1bw.jpeg" width="240">
+<img src="Docs/9.jpeg" width="240">
+<img src="Docs/9bw.jpeg" width="240">
 </p>
+
 ##### Screen 10
 <p>
-<img src="Docs/1.jpeg" width="240">
-<img src="Docs/1bw.jpeg" width="240">
+<img src="Docs/10.jpeg" width="240">
+<img src="Docs/10bw.jpeg" width="240">
+</p>
+
+##### Screen 11
+<p>
+<img src="Docs/11.jpeg" width="240">
+<img src="Docs/11bw.jpeg" width="240">
+</p>
+
+##### Screen 12
+<p>
+<img src="Docs/12.jpeg" width="240">
+<img src="Docs/12bw.jpeg" width="240">
 </p>
 
 ### Settings and Pallete
